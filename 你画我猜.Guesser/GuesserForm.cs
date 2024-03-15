@@ -18,6 +18,7 @@ namespace 你画我猜.Guesser
 
         UdpClient listener;
         IPEndPoint groupEP;
+        bool isPenMode;
         int num1 = 0;
         int num2 = 0;
         int num3 = 0;
@@ -61,12 +62,21 @@ namespace 你画我猜.Guesser
                     else
                     {
                         answer = data[0];
-                        num1 = int.Parse(data[1]);
-                        num2 = int.Parse(data[2]);
-                        num3 = int.Parse(data[3]);
-                        num4 = int.Parse(data[4]);
+                        isPenMode = data[1] == "Pen";
+                        num1 = int.Parse(data[2]);
+                        num2 = int.Parse(data[3]);
+                        num3 = int.Parse(data[4]);
+                        num4 = int.Parse(data[5]);
 
-                        draw();
+                        if (isPenMode)
+                        {
+                            draw();
+                        }
+                        else
+                        {
+                            erase();
+                        }
+
                     }
                 }
             }
@@ -83,6 +93,11 @@ namespace 你画我猜.Guesser
         void draw()
         {
             graphics.DrawLine(new Pen(Color.Black, 7), new Point(num1, num2), new Point(num3, num4));
+        }
+
+        void erase()
+        {
+            graphics.DrawLine(new Pen(Color.White, 30), new Point(num1, num2), new Point(num3, num4));
         }
 
         void clear()

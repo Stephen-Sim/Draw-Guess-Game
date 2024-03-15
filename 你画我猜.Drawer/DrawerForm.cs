@@ -101,7 +101,8 @@ namespace 你画我猜.Drawer
         {
             if (mouseMove && cursorX != -1 && cursorY != -1)
             {
-                Byte[] sendBytes = Encoding.UTF8.GetBytes($"{fruit},{cursorX},{cursorY},{e.Location.X},{e.Location.Y}");
+                var mode = pen.Color == Color.Black ? "Pen" : "Erase";
+                Byte[] sendBytes = Encoding.UTF8.GetBytes($"{fruit},{mode},{cursorX},{cursorY},{e.Location.X},{e.Location.Y}");
                 graphics.DrawLine(pen, new Point(cursorX, cursorY), e.Location);
                 cursorX = e.X; cursorY = e.Y;
 
