@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "你画我猜", "你画我猜\你画我猜.csproj", "{931AB320-8055-45BB-B6A2-60FBEA786FF5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "你画我猜.Drawer", "你画我猜.Drawer\你画我猜.Drawer.csproj", "{951BC207-7B1D-4F96-9009-32A33B539E5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "你画我猜.Guesser", "你画我猜.Guesser\你画我猜.Guesser.csproj", "{61BE06D4-B5A2-4B08-91E0-5B94D292B3BB}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{931AB320-8055-45BB-B6A2-60FBEA786FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{931AB320-8055-45BB-B6A2-60FBEA786FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{931AB320-8055-45BB-B6A2-60FBEA786FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{931AB320-8055-45BB-B6A2-60FBEA786FF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{951BC207-7B1D-4F96-9009-32A33B539E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{951BC207-7B1D-4F96-9009-32A33B539E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{951BC207-7B1D-4F96-9009-32A33B539E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
